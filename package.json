@@ -1,7 +1,7 @@
 {
   "name": "aok-d3-vue",
   "author": "Alex O'Keeffe",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "## How to use: 1. Just use `npm install --save @the-iea/d3-vue` 2. Use the components in your file directly.",
   "scripts": {
     "serve": "vue-cli-service serve",
