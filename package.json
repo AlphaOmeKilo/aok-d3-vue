@@ -1,15 +1,35 @@
 {
-  "name": "d3-vue",
+  "name": "aok-d3-vue",
+  "author": "Alex O'Keeffe",
   "version": "0.1.0",
-  "private": true,
+  "description": "## How to use: 1. Just use `npm install --save @the-iea/d3-vue` 2. Use the components in your file directly.",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name d3-vue ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "keywords": [
+    "vue",
+    "d3",
+    "components"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/d3-vue.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "d3-array": "^2.5.0",
+    "d3-axis": "^1.0.12",
+    "d3-ease": "^1.0.6",
+    "d3-path": "^1.0.9",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
