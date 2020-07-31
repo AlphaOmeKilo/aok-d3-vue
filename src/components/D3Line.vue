@@ -89,11 +89,11 @@ export default {
    * If the graph is already in view, begin the animation.
    */
   mounted() {
-    setTimeout(() => {
+    this.$nextTick(() => {
       this.totalLength = this.$refs.path.getTotalLength();
       if (this.inView)
         this.animate();
-    }, 500);
+    }
   },
   watch: {
     /**
